@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #b0b3c1;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 15px 8%;
+  background: #e0d0dc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  color: yellow;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-outline {
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #0a66c2;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?fit=crop&w=1200&q=80')
+             no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.2;
+}
+.hero span {
+  color: yellow;
+}
+.hero p {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.btn-filled {
+  display: inline-block;
+ -margin-top: 20px;
+  background: #0a66c2;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-filled:hover {
+  background: #004a99;
+}
+
+/* FEATURES */
+.features {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 75px;
+}
+.card h3 {
+  margin-top: 15px;
+}
+.card p {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 60px 12%;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  padding: 18px;
+  background: #0a66c2;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+.btn-edit {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-edit:hover {
+  background: #1e7e34;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-delete:hover {
+  background: #b02a37;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* TABLE STYLE */
+table.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #aaa;
+}
+
+table.styled-table th,
+table.styled-table td {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+table.styled-table th {
+  background-color: #003566;
+  color: white;
+  font-weight: bold;
+}
+
+table.styled-table tr:nth-child(even) {
+  background-color: #e8f1ff;
+}
+
+table.styled-table tr:hover {
+  background-color: #d0e3ff;
+}
+
+/* Form Section Styling for add student*/
+
+.form-box {
+    width: 400px;
+    margin: 40px auto;      /* centers the card */
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.form-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.form-box {
+  background: #ffff;
+  width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.form-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+}
+
+/* Buttons Polish */
+.btn-filled {
+  background-color: #003566;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid #003566;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #003566;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.btn-filled:hover {
+  background-color: #012a4a;
+}
+
+.btn-outline:hover {
+  background-color: #003566;
+  color: #fff;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  width: 250px;
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease-in-out;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-blue {
+  background: #0077b6;
+  color: white;
+}
+.card-green {
+  background: #2d6a4f;
+  color: white;
+}
+.card-orange {
+  background: #ff7f50;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
