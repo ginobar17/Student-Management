@@ -1,6 +1,6 @@
 **Project Title: Student Management System**
-**
-Description:**
+
+**Description:**
 The Student Management System is a web-based application developed using PHP, HTML, CSS, JavaScript, and MySQL that enables educational institutions to efficiently manage student and academic data. This system provides an organized interface for administrators, faculty, and students to interact with core academic operations such as student records, attendance tracking, mark recording, subject and department management, and more.
 
 **The application includes the following key functionalities:**
